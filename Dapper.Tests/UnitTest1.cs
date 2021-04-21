@@ -1,3 +1,4 @@
+using Dapper.Domain.StoreContext.Entities;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Dapper.Tests
@@ -13,8 +14,9 @@ namespace Dapper.Tests
                 "said",
                 "13223232",
                 "fabiohenrique@gmail.com",
-                "rua dos prazees") ;
+                "rua dos prazees");
 
+            var order = new Order(c);
         }
     }
 }

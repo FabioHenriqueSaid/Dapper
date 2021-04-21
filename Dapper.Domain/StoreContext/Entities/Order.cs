@@ -19,12 +19,9 @@ namespace Dapper.Domain.StoreContext.Entities
         public Customer Customer { get; set; }
         public DateTime CreateDate { get; private set; }
         public EOrderStatus Status { get; private set; }
-        public IList<OrderItem> Items { get; private set; }
-        public IList<Delivery> Deliveries { get; private set; }
-        public void AddItem(OrderItem orderItem)
-        {
-
-        }
+        public IReadOnlyCollection<OrderItem> Items { get; private set; }
+        public IReadOnlyCollection<Delivery> Deliveries { get; private set; }
+        public void AddItem(OrderItem orderItem){}
         public void Place() { }
     }
 }
