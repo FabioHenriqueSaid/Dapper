@@ -1,3 +1,13 @@
-# Dapper
+# Dapper vs Entity Framework
 
-1 - Projeto piloto para apresentação do Mini ORM Dapper.
+Entity Framework
+ - facilidade.
+ - mapeamento avançados
+ - migrations
+ - performance discutível
+ - .net core e full framework
+
+Dapper
+ - Performance
+ - Mapeamento simples
+ - .net core e full framework
